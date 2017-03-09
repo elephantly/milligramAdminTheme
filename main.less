@@ -1,0 +1,87 @@
+html, body{
+    font-family: 'Raleway', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    height: 100%;
+    &> .row{
+        max-width: 100%;
+        height: calc(~"100% - 6rem");
+    }
+}
+
+@purple: #9b4dca;
+// @grey: #606c76;
+@pseudoWhite: #f4f5f6;
+@pseudoGrey: #d1d1d1;
+@greyWhite: #e1e1e1;
+@back : #323332;
+@light-blue: #3498db;
+@white: #FFFFFF;
+@grey-light: #656665;
+@grey: #667a85;
+@mat-blue: #27aae2;
+@error: #db3434;
+@error-back: #DD8E8E;
+@valid: #00B16A;
+@info: #3498db;
+@info2: #1abc9c;
+
+a:hover{
+    color: @info;
+}
+
+.login {
+    padding-top: 3rem;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url('https://source.unsplash.com/category/technology');
+    h2{
+        text-align: center;
+    }
+    .whiteBack{
+        background-color: #ffffff;
+        border-radius: 0.2rem;
+        padding: 2rem;
+    }
+}
+header{
+    background: @pseudoWhite;
+    border-bottom: .1rem solid @pseudoGrey;
+    height: 6rem;
+    text-align: center;
+    padding: 0.5rem;
+    h2{
+        line-height: 6rem;
+    }
+    img{
+        height: 5rem;
+    }
+}
+
+nav{
+    color: @white;
+    a{
+        color: @white;
+    }
+}
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) {
+    nav{
+        // width: 16rem;
+        // height: 100%;
+        background-color: @back;
+    }
+    main{
+        // width: calc(~"100% - 16rem");
+    }
+}
+
+/* Larger than tablet screen */
+@media (min-width: 80.0rem) {
+
+}
+
+/* Larger than desktop screen */
+@media (min-width: 120.0rem) {
+
+}
