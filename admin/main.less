@@ -1,0 +1,30 @@
+.breadcrumb{
+    display: flex;
+    margin: 1.5rem 0;
+    li{
+        display: inline-flex;
+        &:not(:last-child)::after{
+            padding: 0 1rem;
+            content: '>';
+        }
+    }
+}
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) {
+    main{
+        position: relative;
+        overflow: auto;
+        height: 100%;
+    }
+}
+
+/* Larger than tablet screen */
+@media (min-width: 80.0rem) {
+
+}
+
+/* Larger than desktop screen */
+@media (min-width: 120.0rem) {
+
+}

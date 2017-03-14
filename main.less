@@ -25,8 +25,14 @@ html, body{
 @info2: #1abc9c;
 
 a:hover{
-    color: @info;
+    color: @purple;
 }
+
+@import 'admin/form.less';
+@import 'admin/header.less';
+@import 'admin/main.less';
+@import 'admin/nav.less';
+@import 'admin/notif.less';
 
 .login {
     padding-top: 3rem;
@@ -42,46 +48,4 @@ a:hover{
         border-radius: 0.2rem;
         padding: 2rem;
     }
-}
-header{
-    background: @pseudoWhite;
-    border-bottom: .1rem solid @pseudoGrey;
-    height: 6rem;
-    text-align: center;
-    padding: 0.5rem;
-    h2{
-        line-height: 6rem;
-    }
-    img{
-        height: 5rem;
-    }
-}
-
-nav{
-    color: @white;
-    a{
-        color: @white;
-    }
-}
-
-/* Larger than mobile screen */
-@media (min-width: 40.0rem) {
-    nav{
-        // width: 16rem;
-        // height: 100%;
-        background-color: @back;
-    }
-    main{
-        // width: calc(~"100% - 16rem");
-    }
-}
-
-/* Larger than tablet screen */
-@media (min-width: 80.0rem) {
-
-}
-
-/* Larger than desktop screen */
-@media (min-width: 120.0rem) {
-
 }

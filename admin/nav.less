@@ -1,0 +1,41 @@
+nav{
+    color: @white;
+    a{
+        color: @white;
+    }
+    ul{
+        list-style: none;
+        padding: 1rem;
+        .active{
+            position: relative;
+            color: @purple;
+            border-bottom: 0.1rem solid @grey;
+            a{
+                color: inherit;
+            }
+            &::after{
+                content: '>';
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+}
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) {
+    nav{
+        height: 100%;
+        background-color: @back;
+    }
+}
+
+/* Larger than tablet screen */
+@media (min-width: 80.0rem) {
+
+}
+
+/* Larger than desktop screen */
+@media (min-width: 120.0rem) {
+
+}

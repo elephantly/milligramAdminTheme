@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Milligram admin theme</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="http://cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+
+    <!-- Milligram CSS minified -->
+    <link rel="stylesheet" href="http://cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+    <link rel="stylesheet" href="main.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header>
+        <h1>Admin theme</h1>
+    </header>
+    <div class="row">
+        <nav class="column column-20">
+            <ul>
+                <li class="active"><a href="">Administration</a></li>
+                <li><a href="">Dashboard</a></li>
+            </ul>
+            <footer></footer>
+        </nav>
+        <main class="column">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Page</a>
+                </li>
+                <li>
+                    pwd
+                </li>
+            </ul>
+            <div class="notif">
+                Text here serves the user
+            </div>
+            <h3>Forms</h3>
+            <form>
+                <fieldset>
+                    <h4>Text</h4>
+                    <label for="nameField">Name</label>
+                    <input type="text" placeholder="CJ Patoilo" id="nameField">
+                    <h4>Select</h4>
+                    <label for="ageRangeField">Age Range</label>
+                    <select id="ageRangeField">
+                        <option value="0-13">0-13</option>
+                        <option value="14-17">14-17</option>
+                        <option value="18-23">18-23</option>
+                        <option value="24+">24+</option>
+                    </select>
+                    <h4>Textarea</h4>
+                    <label for="commentField">Comment</label>
+                    <textarea placeholder="Hi CJ …" id="commentField"></textarea>
+                    <div class="float-right">
+                        <input type="checkbox" id="confirmField">
+                        <label class="label-inline" for="confirmField">Send a copy to yourself</label>
+                    </div>
+                    <h4>Checkboxes</h4>
+                    <div class="checkboxes">
+                        <input id="choice_1" type="checkbox" name="checkbox[]" value="choice_1"><label for="choice_1">Choice 1</label><br>
+                        <input id="choice_2" type="checkbox" name="checkbox[]" value="choice_2"><label for="choice_2">Choice 2</label><br>
+                        <input id="choice_3" type="checkbox" name="checkbox[]" value="choice_3"><label for="choice_3">Choice 3</label><br>
+                        <input id="choice_4" type="checkbox" name="checkbox[]" value="choice_4" checked disabled><label for="choice_4">Choice 4</label>
+                    </div>
+                    <h4>Radios</h4>
+                    <div class="checkboxes">
+                        <input id="male" type="radio" name="gender" value="male"><label for="male">Male</label><br>
+                        <input id="unknown" type="radio" name="gender" value="unknown"><label for="unknown">Unknown</label><br>
+                        <input id="female" type="radio" name="gender" value="female"><label for="female">Female</label><br>
+                        <input id="other" type="radio" name="gender" value="other" checked disabled><label for="other">Other</label>
+                    </div>
+                    <label for="colorField">Color field</label>
+                    <input type="color" id="colorField" placeholder="Your browser doesn't support this field.">
+                    <label for="weekField">Week field</label>
+                    <input type="week" id="weekField" placeholder="Your browser doesn't support this field.">
+                    <label for="datetimeField">Datetime field</label>
+                    <input type="datetime" id="datetimeField" placeholder="Your browser doesn't support this field.">
+                    <label for="dateField">Date field</label>
+                    <input type="date" id="dateField" placeholder="Your browser doesn't support this field.">
+                    <label for="monthField">Month field</label>
+                    <input type="month" id="monthField" placeholder="Your browser doesn't support this field.">
+                    <label for="datetimeLocalField">Datetime-Local field</label>
+                    <input type="datetime-local" id="datetimeLocalField" placeholder="Your browser doesn't support this field.">
+                    <input class="button-primary" type="submit" value="Send">
+                </fieldset>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
