@@ -2,8 +2,27 @@
     padding: 2rem;
     display: flex;
     background-color: @info;
+    &.error{
+        background-color: @error;
+    }
+    &.valid{
+        background-color: @valid;
+    }
     color: @greyWhite;
     position: relative;
+    margin-bottom: 2rem;
+    &:hover{
+        color: @greyWhite;
+    }
+    &:after{
+        content: 'x';
+        top: 2rem;
+        right: 2rem;
+        position: absolute;
+    }
+}
+#notif:target{
+    display:none;
 }
 /* Larger than mobile screen */
 @media (min-width: 40.0rem) {
