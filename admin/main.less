@@ -1,13 +1,25 @@
+main{
+    background: @pseudoWhite;
+}
 .breadcrumb{
+    background-color: @white;
     display: flex;
     margin: 1.5rem 0;
+    padding: 1rem;
     li{
+        margin: 0;
         display: inline-flex;
         &:not(:last-child)::after{
             padding: 0 1rem;
             content: '>';
         }
     }
+}
+.wrapper{
+    background-color: @white;
+    padding: 1rem;
+    margin: 0;
+    margin-top: 1rem;
 }
 
 /* Larger than mobile screen */

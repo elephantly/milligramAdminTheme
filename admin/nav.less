@@ -1,15 +1,21 @@
 nav{
-    color: @white;
+    color: @grey;
     a{
-        color: @white;
+        color: @grey;
     }
     ul{
         list-style: none;
         padding: 1rem;
+        li{
+            padding: 1rem 0.3rem;
+            a{
+                display: block;
+            }
+        }
         .active, li:hover{
             position: relative;
             color: @purple;
-            border-bottom: 0.1rem solid @grey;
+            border-bottom: 0.1rem solid @purple;
             a{
                 color: inherit;
             }
@@ -17,7 +23,12 @@ nav{
                 content: '>';
                 position: absolute;
                 right: 0;
+                top: 1rem;
             }
+        }
+        li:hover{
+            background-color: @pseudoWhite;
+            border: none;
         }
     }
 }
@@ -26,7 +37,7 @@ nav{
 @media (min-width: 40.0rem) {
     nav{
         height: 100%;
-        background-color: @back;
+        background-color: @white;
     }
 }
 
