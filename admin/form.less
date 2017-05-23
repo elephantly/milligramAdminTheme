@@ -1,3 +1,9 @@
+input{
+    &:focus {
+        border-color: @color-primary;
+        outline: 0;
+    }
+}
 [type="checkbox"], [type="radio"]
 {
     position: absolute;
@@ -31,7 +37,7 @@
     content: '';
     width: 0.8rem;
     height: 0.8rem;
-    background: #9b4dca;
+    background: @purple;
     position: absolute;
     top: 0.9rem;
     left: 0.5rem;
