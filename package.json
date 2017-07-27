@@ -1,6 +1,6 @@
 {
   "name": "@elephantly/milligram-admin-theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple admin theme for milligram",
   "main": "main.css",
   "scripts": {
